@@ -8,9 +8,9 @@
 
 .breadcrumbs {
   @include clearfix;
-  margin: 0 auto;
+  // margin: 0 auto;
   max-width: 100%;
-  padding-left: 1em;
+  padding-left: 1.5em;
   padding-right: 1em;
   font-family: $sans-serif;
   -webkit-animation: $intro-transition;
@@ -198,6 +198,7 @@
 
     &.site-title {
       margin-left: 0;
+      font-family: 'D2Coding';
     }
   }
 
@@ -483,7 +484,7 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 0.75rem;
-  font-family: $sans-serif-narrow;
+  font-family: "D2Coding";
   font-size: $type-size-5;
   font-weight: bold;
 }
@@ -507,17 +508,21 @@
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
-  border: 1px solid $border-color;
+  border-left: 3px solid $active-color;
   border-radius: $border-radius;
-  -webkit-box-shadow: $box-shadow;
-  box-shadow: $box-shadow;
+  // -webkit-box-shadow: $box-shadow;
+  // box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 4%);
 
   .nav__title {
-    color: #fff;
+    color: #53575b;
     font-size: $type-size-6;
-    background: $primary-color;
+    // background: $primary-color;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
+
+    i{
+      font-size: 12px;
+    }
   }
 
   // Scrollspy marks toc items as .active when they are in focus
@@ -543,7 +548,8 @@
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    // border-bottom: 1px solid $border-color;
+    font-size: 14px;
 
     &:hover {
       color: $text-color;

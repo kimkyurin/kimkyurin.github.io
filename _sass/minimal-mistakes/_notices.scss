@@ -107,3 +107,10 @@
 .notice--danger {
   @include notice($danger-color);
 }
+
+/* Gray notice */
+
+.notice--gray {
+  @include notice($gray-color);
+}
+
